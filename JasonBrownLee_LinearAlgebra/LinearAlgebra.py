@@ -201,3 +201,54 @@ print(data.shape)
 # reshape
 data = data.reshape((data.shape[0], data.shape[1], 1))
 print(data.shape)
+
+
+# 6 NumPy Array Broadcasting
+# broadcast scalar to one-dimensional array
+from numpy import array
+# define array
+a = array([1, 2, 3])
+print(a)
+# define scalar
+b = 2
+print(b)
+# broadcast
+c = a + b
+print(c)
+
+# broadcast scalar to two-dimensional array
+from numpy import array
+# define array
+A = array([[1, 2, 3],[1, 2, 3]])
+print(A)
+# define scalar
+b = 2
+print(b)
+# broadcast
+C = A + b
+print(C)
+
+# broadcast one-dimensional array to two-dimensional array
+from numpy import array
+# define two-dimensional array
+A = array([[1, 2, 3],[1, 2, 3]])
+print(A)
+# define one-dimensional array
+b = array([1, 2, 3])
+print(b)
+# broadcast
+C = A + b
+print(C)
+
+# broadcasting error
+from numpy import array
+# define two-dimensional array
+A = array([[1, 2, 3],[1, 2, 3]])
+print(A.shape)
+# define one-dimensional array
+b = array([1, 2])
+print(b.shape)
+# attempt broadcast
+C = A + b
+print(C)
+
