@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pn
 
+# 4 Introduction to NumPy Arrays
 # create array
 from numpy import array
 # create array
@@ -251,4 +252,83 @@ print(b.shape)
 # attempt broadcast
 C = A + b
 print(C)
+
+# 7 Vectors and Vector Arithmetic
+# create a vector
+from numpy import array
+# define vector
+v = array([1, 2, 3])
+print(v)
+
+# vector addition
+from numpy import array
+# define first vector
+a = array([1, 2, 3])
+print(a)
+# define second vector
+b = array([1, 2, 3])
+print(b)
+# add vectors
+c = a + b
+print(c)
+
+# vector subtraction
+from numpy import array
+# define first vector
+a = array([1, 2, 3])
+print(a)
+# define second vector
+b = array([0.5, 0.5, 0.5])
+print(b)
+# subtract vectors
+c = a - b
+print(c)
+
+# vector multiplication
+from numpy import array
+# define first vector
+a = array([1, 2, 3])
+print(a)
+# define second vector
+b = array([1, 2, 3])
+print(b)
+# multiply vectors
+c = a * b
+print(c)
+
+# vector division
+from numpy import array
+# define first vector
+a = array([1, 2, 3])
+print(a)
+# define second vector
+b = array([1, 2, 3])
+print(b)
+# divide vectors
+c = a / b
+print(c)
+
+# vector dot product
+from numpy import array
+# define first vector
+a = array([1, 2, 3])
+print(a)
+# define second vector
+b = array([1, 2, 3])
+print(b)
+# multiply vectors
+c = a.dot(b)
+print(c)
+
+# vector-scalar multiplication
+from numpy import array
+# define vector
+a = array([1, 2, 3])
+print(a)
+# define scalar
+s = 0.5
+print(s)
+# multiplication
+c = s * a
+print(c)
 
